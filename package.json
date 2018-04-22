@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "swagger-ui-dist",
+        "scope": null,
+        "escapedName": "swagger-ui-dist",
+        "name": "swagger-ui-dist",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\OpenServer2\\domains\\swaggerEditor.local"
+    ]
+  ],
+  "_from": "swagger-ui-dist@latest",
+  "_id": "swagger-ui-dist@3.13.5",
+  "_inCache": true,
+  "_location": "/swagger-ui-dist",
+  "_nodeVersion": "6.9.5",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/swagger-ui-dist_3.13.5_1524282145026_0.7553521923668838"
+  },
+  "_npmUser": {
+    "name": "swagger",
+    "email": "apiteam@swagger.io"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "swagger-ui-dist",
+    "scope": null,
+    "escapedName": "swagger-ui-dist",
+    "name": "swagger-ui-dist",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.13.5.tgz",
+  "_shasum": "fb4f7f29070f623a1027ff3c669c241b1e0b6378",
+  "_shrinkwrap": null,
+  "_spec": "swagger-ui-dist",
+  "_where": "D:\\OpenServer2\\domains\\swaggerEditor.local",
+  "bugs": {
+    "url": "https://github.com/swagger-api/swagger-ui/issues"
+  },
+  "contributors": [
+    {
+      "url": "in alphabetical order"
+    },
+    {
+      "name": "Anna Bodnia",
+      "email": "anna.bodnia@gmail.com"
+    },
+    {
+      "name": "Buu Nguyen",
+      "email": "buunguyen@gmail.com"
+    },
+    {
+      "name": "Josh Ponelat",
+      "email": "jponelat@gmail.com"
+    },
+    {
+      "name": "Kyle Shockey",
+      "email": "kyleshockey1@gmail.com"
+    },
+    {
+      "name": "Robert Barnwell",
+      "email": "robert@robertismy.name"
+    },
+    {
+      "name": "Sahar Jafari",
+      "email": "shr.jafari@gmail.com"
+    }
+  ],
+  "dependencies": {},
+  "description": "[![NPM version](https://badge.fury.io/js/swagger-ui-dist.svg)](http://badge.fury.io/js/swagger-ui-dist)",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "fb4f7f29070f623a1027ff3c669c241b1e0b6378",
+    "tarball": "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-3.13.5.tgz",
+    "fileCount": 17,
+    "unpackedSize": 19547331,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa2rMiCRA9TVsSAnZWagAAuLoP/18oKsjs516o8I5RjY0F\nZSv8G2Fysrw26NwoJ0k+QeSu0biyIGOxNILxZRoibYKmPFxq3HCAMB13TLVY\nvLVOKewB01aC2yrt0tkiQS/xoy7+W4o1HQGBWvBtlOaNZtfcRy/ahEOe4OKY\nKwb8Ahh0NViDaWqXbtK6LJWRG+4o80HM95vz0pCRL6STQ11hDYyu8yGTHCLb\nsNJaqjXHM4TUbeOoTXi14aZdCiZNENVX/ya1ma/nUV1eeMJODCOzkp2ACRCT\nT+Asy7DsPeYE93ekyx9dBCpPtw2knCp7nYYDEnU3cHSMXFCk9zwjR/urf0dz\nREoEMUKmQTehIiTOz/WkgNwrpuGsGsFeHjwYOGvEXYfnexddsUut1iurDpsd\nRm82DAobPAzGbs2i7J2UqVNkoukYSu/SLO216HyZNocXWcfRDFAuFG2a0Jz/\nRllG5unrM9yvel3uwBBlpGEPoyabsf+gB2/090CGf8pHv+X15r0ljRibCpU9\nKIxy7/UD4NWS/KUbJPgdiyWfAaMndsMBkmuQF+WRkxrf/p19gDatjeuqyYt7\nNBZeP6e4G3vnl4icExneEyCdF8z2yv7UmcGB3LCsmDFi88/utBxLJhGURcbN\nGT+R+mHP2geA1El/t2Zv9h92E2Om9TegIjTpkDtSmmZdgfKqHiOHRyPbHVf2\nH4H4\r\n=HoVo\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/swagger-api/swagger-ui#readme",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "kyleshockey",
+      "email": "kyle.shockey1@gmail.com"
+    },
+    {
+      "name": "swagger",
+      "email": "apiteam@swagger.io"
+    },
+    {
+      "name": "swagger-api",
+      "email": "apiteam@swagger.io"
+    }
+  ],
+  "name": "swagger-ui-dist",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/swagger-api/swagger-ui.git"
+  },
+  "scripts": {},
+  "version": "3.13.5"
+}
