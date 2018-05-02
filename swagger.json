@@ -29,23 +29,6 @@
   ],
   "paths": {
     "/books": {
-      "get": {
-        "tags": [
-          "Books"
-        ],
-        "summary": "Display all books",
-        "description": "Display all books",
-        "responses": {
-          "405": {
-            "description": "Invalid input"
-          }
-        },
-        "security": [
-          {
-            "Bearer": []
-          }
-        ]
-      },
       "post": {
         "tags": [
           "Books"
@@ -264,13 +247,31 @@
         ]
       }
     },
-    "/movies": {
+    "/books/list/{offset}/{limit}": {
       "get": {
         "tags": [
-          "Movies"
+          "Books"
         ],
-        "summary": "Display all movies",
-        "description": "Display all movies",
+        "summary": "Display all books",
+        "description": "Display all books",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "description": "Limit of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
         "responses": {
           "405": {
             "description": "Invalid input"
@@ -281,7 +282,57 @@
             "Bearer": []
           }
         ]
-      },
+      }
+    },
+    "/books/list/{offset}": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Display all books",
+        "description": "Display all books",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/books/list": {
+      "get": {
+        "tags": [
+          "Books"
+        ],
+        "summary": "Display all books",
+        "description": "Display all books",
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/movies": {
       "post": {
         "tags": [
           "Movies"
@@ -500,13 +551,31 @@
         ]
       }
     },
-    "/products": {
+    "/movies/list/{offset}/{limit}": {
       "get": {
         "tags": [
-          "Products"
+          "Movies"
         ],
-        "summary": "Display all product",
-        "description": "Display all products",
+        "summary": "Display all movies",
+        "description": "Display all movies",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "description": "Limit of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
         "responses": {
           "405": {
             "description": "Invalid input"
@@ -517,7 +586,57 @@
             "Bearer": []
           }
         ]
-      },
+      }
+    },
+    "/movies/list/{offset}": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Display all movies",
+        "description": "Display all movies",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/movies/list": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Display all movies",
+        "description": "Display all movies",
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/products": {
       "post": {
         "tags": [
           "Products"
@@ -680,13 +799,79 @@
         ]
       }
     },
-    "/users": {
+    "/products/list/{offset}/{limit}": {
       "get": {
         "tags": [
-          "Users"
+          "Products"
         ],
-        "summary": "Display all users",
-        "description": "Display all users",
+        "summary": "Display all product",
+        "description": "Display all products",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "description": "Limit of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/products/list/{offset}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Display all product",
+        "description": "Display all products",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/products/list": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "summary": "Display all product",
+        "description": "Display all products",
         "responses": {
           "405": {
             "description": "Invalid input"
@@ -808,6 +993,91 @@
           },
           "404": {
             "description": "Product not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/users/list/{offset}/{limit}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Display all users",
+        "description": "Display all users",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "limit",
+            "in": "path",
+            "description": "Limit of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/users/list/{offset}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Display all users",
+        "description": "Display all users",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "path",
+            "description": "Offset of returned items",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/users/list": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Display all users",
+        "description": "Display all users",
+        "responses": {
+          "405": {
+            "description": "Invalid input"
           }
         },
         "security": [
