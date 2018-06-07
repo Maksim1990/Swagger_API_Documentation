@@ -1,22 +1,14 @@
-# Swagger UI Dist
-[![NPM version](https://badge.fury.io/js/swagger-ui-dist.svg)](http://badge.fury.io/js/swagger-ui-dist)
+# Swagger_API_Documentation
+## Check this project online: http://www.discoveringworld.net/restclient/
 
-# API
+###### Detailed description of this project: http://web.discoveringworld.net/projects/restful_api_app/
 
-This module, `swagger-ui-dist`, exposes Swagger-UI's entire dist folder as a dependency-free npm module.
-Use `swagger-ui` instead, if you'd like to have npm install dependencies for you.
+###### Check out also my other applications and works: http://web.discoveringworld.net/
 
-`SwaggerUIBundle` and `SwaggerUIStandalonePreset` can be imported:
-```javascript
-  import { SwaggerUIBundle, SwaggerUIStandalonePreset } from "swagger-ui-dist"
-```
+#### REST OAuth API client for [REST OAuth API Server APP](https://github.com/Maksim1990/REST_OAuth_API_Laravel_server):
 
-To get an absolute path to this directory for static file serving, use the exported `getAbsoluteFSPath` method:
+###### Page of API documentation based on Swagger UI API framework
 
-```javascript
-const swaggerUiAssetPath = require("swagger-ui-dist").getAbsoluteFSPath()
+![Mockup for feature A](http://web.discoveringworld.net/wp-content/uploads/2018/05/api1.png)
 
-// then instantiate server that serves files from the swaggerUiAssetPath
-```
-
-For anything else, check the [Swagger-UI](https://github.com/swagger-api/swagger-ui) repository.
+## Check out [REST OAuth API Server APP](https://github.com/Maksim1990/REST_OAuth_API_Laravel_server) code and [REST OAuth API Client APP](https://github.com/Maksim1990/REST_OAuth_API_Laravel_Client) code
